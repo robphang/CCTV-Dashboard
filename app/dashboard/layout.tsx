@@ -1,15 +1,5 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
-import NavBar from '@/app/ui/dashboard/navbar';
-import { Metadata } from 'next';
- 
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
-  },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
-};
+import NavBar from '../ui/dashboard/navbar';
 
 export const experimental_ppr = true;
 
@@ -22,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
         <NavBar />
         {children}
-        </div>
+      </div>
     </div>
   );
 }
