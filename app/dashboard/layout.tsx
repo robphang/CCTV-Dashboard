@@ -1,5 +1,5 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
-import NavBar from '../ui/dashboard/navbar';
+import NavBar from '@/app/ui/dashboard/navbar';
 
 export const experimental_ppr = true;
 
@@ -11,8 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
         <NavBar />
-        {children}
-      </div>
+        {children}</div>
     </div>
   );
 }
