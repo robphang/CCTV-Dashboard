@@ -1,4 +1,4 @@
-import { Card } from '@/app/ui/dashboard/cards';
+//import { Card } from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import CardWrapper from '@/app/ui/dashboard/cards';
@@ -20,10 +20,10 @@ export default async function Page() {
     // const numberOfInvoices = (await fetchCardData()).numberOfInvoices;
     // const numberOfCustomers = (await fetchCardData()).numberOfCustomers;
     const {
-      numberOfInvoices,
-      numberOfCustomers,
-      totalPaidInvoices,
-      totalPendingInvoices,
+      //numberOfInvoices,
+      //numberOfCustomers,
+      //totalPaidInvoices,
+      //totalPendingInvoices,
     } = await fetchCardData();
   return (
     <main>
